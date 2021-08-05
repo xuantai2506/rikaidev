@@ -1,0 +1,51 @@
+/* Administration Control Panel - Olala Web | Olala Group (www.olalaweb.vn | info@olalaweb.vn) */
+.logo {
+	background: url(../images/logo-olala.png) left center no-repeat;
+	margin: 0 auto 30px;
+	width: 330px;
+	height: 125px;
+}
+.support-note {
+	margin-top: 10px;
+	text-align: right;
+}
+.support-note span{
+	color: #999;
+	width: auto;
+	display: inline-block;
+	font-size: 12px;
+	letter-spacing: 0px;
+	text-indent: 2px;
+}
+.support-note .support-text:before {
+	content: "Hỗ trợ kỹ thuật: (+84) 974 779 085" !important;
+}
+
+#footer-admin {
+	background: rgba(0,0,0,0.3);
+	position: fixed;
+	z-index: 5;
+	padding: 5px 10px;
+	width: 220px;
+	left: 0;
+	bottom: 0;
+	color: #1d92af;
+	font-size: 12px;
+}
+#footer-admin p {
+	margin: 0 !important;
+}
+#footer-admin .footer-text .company:before {
+	content: "2014 \00a9  Olala Web | Olala Group" !important;
+}
+#footer-admin .footer-text .email:before {
+	content: "info@olalaweb.vn" !important;
+}
+#footer-admin .footer-text .phone:before {
+	content: "0974 779 085" !important;
+}
+@media (max-width: 767px)  {
+	#footer-admin {
+		display: none !important;
+	}
+}

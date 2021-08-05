@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /adminjet/
+Disallow: /database/
+Disallow: /includes/function/
+Disallow: /includes/class/
+Disallow: /lang/
+Disallow: /tmp/
+Disallow: /config.php
+Disallow: /define.php
+Disallow: /register_globals.php
+Sitemap: http://zogostudio.com/sitemap.xml

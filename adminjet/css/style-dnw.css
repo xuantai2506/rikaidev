@@ -1,0 +1,73 @@
+/* Administration Control Panel - Lovaweb | lovaweb (www.lovaweb.vn | lovaweb2020@gmail.com) */
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.dash h3 {
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    padding-left: 15px;
+    padding: 5px 15px;
+}
+
+.main-nav-closed .dash h3 {
+    display: none;
+}
+
+.support-note {
+    margin-top: 10px;
+    text-align: right;
+}
+
+.support-note span {
+    color: #999;
+    width: auto;
+    display: inline-block;
+    font-size: 12px;
+    letter-spacing: 0px;
+    text-indent: 2px;
+}
+
+.support-note .support-text:before {
+    content: "Hỗ trợ kỹ thuật: (+84) 0934 646 649" !important;
+}
+
+#footer-admin {
+    z-index: 5;
+    padding: 20px;
+    color: #222222;
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+}
+
+#footer-admin p {
+    margin: 0 !important;
+}
+
+#footer-admin .footer-text .company:before {
+    content: "Copyright © Designed & Developed by Lovaweb 2020" !important;
+}
+
+#footer-admin .footer-text .email:before {
+    content: "Mail Contact" !important;
+}
+
+#footer-admin .footer-text .phone:before {
+    content: "Tel Contact" !important;
+}
+
+@media (max-width: 767px) {
+    #footer-admin {
+        display: none !important;
+    }
+}

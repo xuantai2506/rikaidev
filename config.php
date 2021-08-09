@@ -8,9 +8,9 @@ $CONFIG['templateName'] = '';
 
 // Set Database info
 $CONFIG['vi']['tth_db_host'] = 'localhost';
-$CONFIG['vi']['tth_db_user'] = 'rikaivn_vi';
-$CONFIG['vi']['tth_db_pass'] = 'LongVan@1993';
-$CONFIG['vi']['tth_db_name'] = 'rikaivn_vi';
+$CONFIG['vi']['tth_db_user'] = 'root';
+$CONFIG['vi']['tth_db_pass'] = '';
+$CONFIG['vi']['tth_db_name'] = 'rikaidev_vi';
 // Set Database info
 $CONFIG['jp']['tth_db_host'] = 'localhost';
 $CONFIG['jp']['tth_db_user'] = 'rikaivn_jp';

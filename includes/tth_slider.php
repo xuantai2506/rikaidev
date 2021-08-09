@@ -33,24 +33,24 @@
             <?php } ?>
             <div class="box_form_search_job">
                 <div class="form_search_job">
-                    <form class="form_search_home" action="#" method="GET">
+                    <form class="form_search_home"  action="" method="GET">
                         <div class="box_form_input">
                             <input type="text" name="search" id="search" placeholder="<?php echo $input_search_job;?>" required>
                         </div>
                         <div class="box_form_input">
-                            <select title="<?php echo $select_all_work;?>" class="selectpicker" name="work" id="work" multiple>
-                            <option value=""><?php echo $select_all_work;?></option>
-                            <?php
-                                $db->table = "article_menu";
-                                $db->condition = "is_active = 1 and category_id = 1";
-                                $db->order = "sort asc";
-                                $db->limit = "";
-                                $rowsdj = $db->select();
-                                foreach ($rowsdj as $rowd) {
-                            ?>      
-                            <option value="<?php echo $rowd['article_menu_id'];?>"><?php echo $rowd['name'];?></option>
-                            <?php } ?>
-                        </select>
+                            <select title="<?php echo $select_all_work;?>" class="selectpicker" name="work[]" id="work" multiple>
+                                <option value=""><?php echo $select_all_work;?></option>
+                                <?php
+                                    $db->table = "article_menu";
+                                    $db->condition = "is_active = 1 and category_id = 1";
+                                    $db->order = "sort asc";
+                                    $db->limit = "";
+                                    $rowsdj = $db->select();
+                                    foreach ($rowsdj as $rowd) {
+                                ?>      
+                                <option value="<?php echo $rowd['article_menu_id'];?>"><?php echo $rowd['name'];?></option>
+                                <?php } ?>
+                            </select>
                         </div>
                         <div class="box_form_input">
                             <?php
@@ -61,7 +61,7 @@
                                 $rowss = $db->select();
                                 foreach ($rowss as $rowaa) {
                             ?> 
-                            <select title="<?php echo $rowaa['name'];?>" class="selectpicker" name="jp_proficiency" id="jp_proficiency" multiple>
+                            <select title="<?php echo $rowaa['name'];?>" class="selectpicker" name="jp_proficiency[]" id="jp_proficiency" multiple>
                                 <option value=""><?php echo $select_all;?></option>
                                 <?php
                                     $db->table = "others_menu";
@@ -85,7 +85,7 @@
                                 $rowss = $db->select();
                                 foreach ($rowss as $rowaa) {
                             ?> 
-                            <select title="<?php echo $rowaa['name'];?>" class="selectpicker" name="work_point" id="work_point" multiple>
+                            <select title="<?php echo $rowaa['name'];?>" class="selectpicker" name="work_point[]" id="work_point" multiple>
                                 <option value=""><?php echo $select_all_adress;?></option>
                                 <?php
                                     $db->table = "others_menu";
@@ -109,7 +109,7 @@
                                 $rowss = $db->select();
                                 foreach ($rowss as $rowaa) {
                             ?> 
-                            <select title="<?php echo $rowaa['name'];?>" class="selectpicker" name="earnings" id="earnings" multiple>
+                            <select title="<?php echo $rowaa['name'];?>" class="selectpicker" name="earnings[]" id="earnings" multiple>
                                 <option value=""><?php echo $select_all;?></option>
                                 <?php
                                     $db->table = "others_menu";
@@ -125,7 +125,7 @@
                             <?php } ?>
                         </div>
                         <div class="button_search">
-                            <button type="submit"><img src="<?php echo HOME_URL;?>/images/icon/search.svg" alt="Icon search" title="Icon search"><span><?php echo $button_search;?></span> </button>
+                            <button name="button-search-advance" class="button-search-advance"><img src="<?php echo HOME_URL;?>/images/icon/search.svg" alt="Icon search" title="Icon search"><span><?php echo $button_search;?></span> </button>
                         </div>
                     </form>
                 </div>

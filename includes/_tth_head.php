@@ -8,14 +8,6 @@ if (!defined('TTH_SYSTEM')) { die('Please stop!'); }
 <meta name="language" content="<?php echo TTH_LANGUAGE;?>">
 <meta http-equiv="Refresh" content="1800">
 <title><?php echo getTitle(); ?></title>
-<meta name="description" content="<?php echo getDescription(); ?>">
-<meta name="keywords" content="<?php echo getKeywords(); ?>">
-<meta property="og:title" content="<?php echo getTitle(); ?>">
-<meta property="og:type" content="webpage">
-<meta property="og:description" content="<?php echo getDescription(); ?>">
-<meta property="og:site_name" content="<?php echo getConstant('meta_site_name'); ?>">
-<meta property="og:image" content="<?php echo getOgImage($slug_cat, $id_menu, $id_article);?>">
-<meta property="og:url" content="<?php echo site_url(); ?>">
 <?php if(getConstant('fb_app_id')!='') echo '<meta property="fb:app_id" content="' . getConstant('fb_app_id') . '">'; ?>
 <?php if(getConstant('article_author')!='') echo '<meta property="article:author" content="' . getConstant('article_author') . '">'; ?>
 <?php if(getConstant('author_google')!='') echo '<link rel="author" href="https://plus.google.com/u/0/' . getConstant('author_google') . '">'; ?>
